@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo-colored.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <title>MyMentor</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" />
+      <p>MyMentor</p>
+    </header>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>
+          Чуть-чуть каждый день — и ты <br />
+          уже на шаг ближе.
+        </h1>
+        <p>
+          Перестань беспокоиться, с чего начать. Мы уже <br />
+          подготовили путь.
+        </p>
+        <a href="#mentors">Начать путь</a>
+      </div>
+      <img
+        class="book-sticker"
+        src="./images/book-sticker.svg"
+        alt="book"
+        data-aos="zoom-out-right"
+        data-aos-duration="900"
+      />
+      <img
+        class="star-sticker"
+        src="./images/star-sticker.svg"
+        alt="star"
+        data-aos="zoom-out-down"
+        data-aos-duration="900"
+      />
+      <img
+        class="laptop-sticker"
+        src="./images/laptop-sticker.svg"
+        alt="laptop"
+        data-aos="zoom-out-right"
+        data-aos-duration="900"
+      />
+
+      <img
+        class="learner-sticker"
+        src="./images/learner-sticker.svg"
+        alt="learner"
+        data-aos="zoom-out-left"
+        data-aos-duration="900"
+      />
+      <img
+        class="lightning-sticker"
+        src="./images/lightning-sticker.svg"
+        alt="lightning"
+        data-aos="zoom-out-down"
+        data-aos-duration="900"
+      />
+      <img
+        class="headphones-sticker"
+        src="./images/headphones-sticker.svg"
+        alt="headphones"
+        data-aos="zoom-out-left"
+        data-aos-duration="900"
+      />
+    </div>
+    <div class="mentors" id="mentors">
+      <div class="mentors-text">
+        <h2>Выбери своего ментора</h2>
+        <p>Слушай себя. Выбирай ментора. Начинай свой маршрут.</p>
+      </div>
+      <div class="wrapper">
+        <div class="grid">
+          <div class="card" data-aos="fade-right">
+            <img src="./images/backend dev.png" alt="" />
+            <p>Руслан — Backend</p>
+            <button>Выбрать</button>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="100">
+            <img src="./images/frontend dev.png" alt="" />
+            <p>Айдана — Frontend</p>
+            <button>Выбрать</button>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="200">
+            <img src="./images/designer.png" alt="" />
+            <p>Амина — Дизайн</p>
+            <button>Выбрать</button>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="300">
+            <img src="./images/mobile dev.png" alt="" />
+            <p>Марат — Мобилка</p>
+            <button>Выбрать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="todo">
+      <div class="todo-title">
+        <h1>Твои задачи</h1>
+        <p>Выполняй задачи по одному — не спеша, в своём темпе.</p>
+      </div>
+      <div class="container">
+        <div class="stats-container">
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+          <div class="stats-number">
+            <p id="numbers">0%</p>
+            <p>выполнено</p>
+          </div>
+        </div>
+
+        <form action="">
+          <input type="text" placeholder="Добавить задачу..." id="input-box" />
+          <button id="newTask" class="add-btn" type="submit">+</button>
+        </form>
+        <ul class="task-list"></ul>
+      </div>
+    </div>
+    <div class="useful-links">
+      <div class="links-text">
+        <h1>Полезные ресурсы</h1>
+        <p>
+          Собирай статьи, видео, курсы <br /> и всё
+          что помогает тебе двигаться вперёд.
+        </p>
+      </div>
+      <div class="links-container"></div>
+    </div>
+    <div class="link-input">
+      <form action="" class="links-form">
+        <label for="linkName">Название ресурса</label>
+        <input type="text" id="linkName" />
+        <label for="uLink">Ссылка</label>
+        <input type="text" id="uLink" />
+        <button class="add-link">Добавить</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>
+        Сделано с заботой |
+        <span><img src="./images/logo.svg" alt="" /></span> MyMentor 2025
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
